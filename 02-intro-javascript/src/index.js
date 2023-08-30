@@ -21,4 +21,12 @@ function getSaludo (){
     return "hola mundo";
 }
 
-console.log (`"este es un texto: ${getSaludo()}"`)
+console.log (`"este es un texto: ${getSaludo()}"`);
+
+const persona = { 
+    nombre: "Tony",
+    apellido: "Stark",
+    edad: 45,
+};
+
+console.table(persona);
