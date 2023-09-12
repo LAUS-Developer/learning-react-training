@@ -2,7 +2,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import {HelloWorldApp} from "./helloWorldApp";
+// import {HelloWorldApp} from "./helloWorldApp";
+import {FirstApp} from "./FirstApp"
+
 
 // all in react starts with a function
 
@@ -12,7 +14,7 @@ function App (){
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
-        <App/>
+        <FirstApp/>
     </React.StrictMode>
 );
 
