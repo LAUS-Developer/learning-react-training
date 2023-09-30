@@ -1,14 +1,16 @@
-html,body{
-    background-color: darkblue;
-    color:yellowgreen;
-    font-size: 1.5rem;
-    padding:10vw;
+
+
+html, body {
+    background-color: #21232A;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.3rem;
+    padding: 70px;
 }
 
-button{
-    width: fit-content;
-    padding: 25px;
-    font-weight: bold;
-    font-size: 17px;
-    border-radius: 0.5em;
+
+button {
+    padding: 15px;
+    font-size: 1.3rem;
+    margin-right: 5px;
 }

@@ -1,24 +1,17 @@
-
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { CounterApp } from './CounterApp';
 
-// import {HelloWorldApp} from "./helloWorldApp";
-import {FirstApp} from "./FirstApp";
-import {CounterApp} from "./CounterApp";
+import { FirstApp } from './FirstApp';
+// import { HelloWorldApp } from './HelloWorldApp';
+import './styles.css';
 
-import "./styles.css";
 
-// all in react starts with a function
 
-function App (){
-    return (<h1>Hola Mundo</h1>);
-}
-
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.createRoot( document.getElementById('root') ).render(
     <React.StrictMode>
-        {/*<FirstApp title="hola" subTitle={123}/>*/}
-
-        <CounterApp title="test" myvalue={4321}/>
+        <CounterApp value={ 20 } />
+        {/* <FirstApp title="Hola, Soy Vegeta" /> */}
     </React.StrictMode>
 );
 

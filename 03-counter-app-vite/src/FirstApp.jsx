@@ -1,47 +1,28 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
-export const FirstApp = ({ title, subTitle }) => {
+export const FirstApp = ({ title, subTitle, name }) => {
 
-    return (
-        <>
-            <h1>{title}</h1>
-            <p>{subTitle}</p>
-        </>
-
-    )
+  // console.log(props);
+  
+  return (
+    <>
+      <h1 data-testid="test-title"> { title } </h1>
+      {/* <code>{ JSON.stringify( newMessage ) }</code> */}
+      <p>{ subTitle }</p>
+      <p>{ subTitle }</p>
+      <p>{ name }</p>
+    </>
+  )
 }
+
 
 FirstApp.propTypes = {
-    title: PropTypes.string.isRequired,
-    subTitle: PropTypes.number.isRequired
+  title: PropTypes.string.isRequired,
+  subTitle: PropTypes.string,
 }
 
-
-
-/* Trash
-
-import {fragment} from "react";
-
-const newMessage = {
-    message:"Hola Mundo",
-    title:"test"
-    
-}; // No es recomendado pornerlo en el bloque export
-
-const funcionLeo = /*no usar async() => { 
-
-    return "Leonidas Funcionando :D";
-
+FirstApp.defaultProps = {
+  name: 'Fernando Herrera',
+  subTitle: 'No hay subtítulo',
+  // title: 'No hay título',
 }
-
-export const FirstApp = () => { 
-    return (
-        <>
-            <h1>{ funcionLeo() }</h1>
-            {/*<code>{ JSON.stringify(newMessage) }</code>}
-            <p>Test</p>
-        </>
-        
-    )
-}
-*/
