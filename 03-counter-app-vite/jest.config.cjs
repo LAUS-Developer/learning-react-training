@@ -1,6 +1,4 @@
 module.exports ={
-
     // TODO: JSDom
-    setupFiles:['./jest.setup.cjs']
-
+    setupFiles:['./jest.setup.js']
 }
