@@ -1,6 +1,9 @@
 {
   "dependencies": {
+    "cmdtest": "^1.0.0",
     "prop-types": "^15.8.1",
-    "react-scripts": "^5.0.1"
+    "react-scripts": "^5.0.1",
+    "vite": "^5.1.1",
+    "yarn": "^1.22.21"
   }
 }
